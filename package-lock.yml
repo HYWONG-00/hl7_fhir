@@ -1,0 +1,5 @@
+packages:
+- package: entechlog/dbt_snow_mask
+  name: dbt_snow_mask
+  version: 0.2.3
+sha1_hash: bf505bb778401e2837facf4c822913c91edd7b28
