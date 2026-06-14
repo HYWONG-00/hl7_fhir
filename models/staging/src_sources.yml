@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: fhir_sources # This is just a nickname you use inside dbt
+    database: HL7_FHIR # Must match your Snowflake database exactly
+    schema: HL7_FHIR_V1 # Must match your Snowflake schema exactly
+    tables:
+      - name: PATIENT # Must match your Snowflake table exactly

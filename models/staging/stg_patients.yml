@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_patients  # ⚠️ This must EXACTLY match the name of your stg_patients.sql file
+    description: "Mask all the patient demogrpahics information"
+    columns:
+      - name: PATIENT_SSN
+        config:
+          meta:
+            masking_policy: SIMPLE_MASK_PII_CHAR
+      - name: PATIENT_BIRTH_SEX
+        config:
+          meta:
+            masking_policy: SIMPLE_MASK_HIPAA_CHAR
+      - name: PATIENT_BIRTH_CITY
+        config:
+          meta:
+            masking_policy: SIMPLE_MASK_HIPAA_CHAR
