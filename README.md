@@ -8,6 +8,7 @@ This is the architecture of the whole pipeline:
 
 ### Prepare data in Snowflake and load into Internal Stage (Bronze Layer)
 First, install all the json files into local computer, https://synthetichealth.github.io/synthea-sample-data/downloads/synthea_sample_data_fhir_stu3_nov2021.zip.
+**Please refer to snowflake_CreateDB.sql for all the code in Snowflake**
 1. Prepare the Lab Environment by setting up the database, schema, and compute resources in Snowflake.
 CREATE OR REPLACE DATABASE, CREATE OR REPLACE WAREHOUSE,.... that's how we do that in Snowflake
 2. Then, setting up internal storage which is to temporarily hold your raw FHIR JSON files.
